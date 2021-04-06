@@ -1,0 +1,1 @@
+export { FundamentalAlphav } from './src/FundamentalAlphav'
