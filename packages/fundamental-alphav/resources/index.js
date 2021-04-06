@@ -9,7 +9,7 @@ import { incomesDb }                                from './incomes.db'
 import { incomesLite }                              from './incomes.lite'
 
 export const FieldsCrostab = CrosTab.from({
-  side: [ BALANCES, INCOMES, CASHFLOWS, VALUATIONS ],
+  side: [ BALANCES, INCOMES, CASHFLOWS ],
   head: [ DB, LITE ],
   rows: [
     [ balancesDb, balancesLite ],
