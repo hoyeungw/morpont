@@ -4,8 +4,7 @@ import { TABLE }                                      from '@analys/enum-tabular
 import { LITE }                                       from '@glossa/enum-data-scopes'
 import { BALANCES, CASHFLOWS, DATE, INCOMES, SYMBOL } from '@glossa/enum-fin'
 import { BASE }                                       from '@morpont/exchange-alphav/src/assets/base'
-import { decoVector, logger }                         from '@spare/logger'
-import { shiftMonth, within }                         from '@valjoux/dashed-date'
+import { shiftYear, within }                          from '@valjoux/dashed-date'
 import { date }                                       from '@valjoux/timestamp'
 import { iso }                                        from '@vect/vector-init'
 import { FieldsCrostab }                              from '../resources'
@@ -17,7 +16,7 @@ export class FundamentalAlphav {
   static login(key) { return (FundamentalAlphav.apikey = key), FundamentalAlphav }
   static async timeseries({
                             symbol = 'AAPL',
-                            start = shiftMonth(TODAY, -12),
+                            start = shiftYear(TODAY, -3),
                             end = TODAY,
                             report = BALANCES,
                             format = TABLE,
@@ -38,7 +37,6 @@ export class FundamentalAlphav {
             .mutate(x => x / MILLION, { exclusive: [ SYMBOL, DATE, 'curr' ] })
             .unshiftColumn(SYMBOL, iso(table.ht, symbol))
             .setTitle(symbol)
-          table.head |> decoVector |> logger
           return table
         },
         args: { symbol, start, end, },

@@ -33,7 +33,7 @@
     "@valjoux/timestamp": "^0.2.5",
     "@vect/vector-init": "^0.3.8",
     "@vect/vector-merge": "^0.3.8",
-    "naivecsv": "^0.2.0"
+    "naivecsv": "^0.2.1"
   },
   "devDependencies": {
     "@flua/utils": "^0.3.0",

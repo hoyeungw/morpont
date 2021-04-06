@@ -119,4 +119,7 @@ const _periodToAlphavantageFunction = period => {
   return 'TIME_SERIES_MONTHLY';
 };
 
+const FIELD = ['symbol', 'date', 'o', 'hi', 'lo', 'e', 'vol'];
+
 exports.ExchangeAlphav = ExchangeAlphav;
+exports.FIELD = FIELD;
