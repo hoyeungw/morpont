@@ -33,6 +33,12 @@
     "@vect/vector-merge": "^0.3.8",
     "naivecsv": "^0.2.0"
   },
+  "devDependencies": {
+    "@flua/utils": "^0.3.0",
+    "@flua/vinylize": "^0.3.0",
+    "@spare/enum-chars": "^0.11.11",
+    "@spare/verse": "^0.11.11"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/morpont.git"

@@ -104,7 +104,7 @@ const AbbrAlphav = {
     [ /treasury/gi, 'tr' ],
   ],
 }
-const _reportToAlphavantageFunction = report => {
+export const _reportToAlphavantageFunction = report => {
   if (report === INCOMES) { return 'INCOME_STATEMENT' }
   if (report === BALANCES) { return 'BALANCE_SHEET' }
   if (report === CASHFLOWS) { return 'CASH_FLOW' }
