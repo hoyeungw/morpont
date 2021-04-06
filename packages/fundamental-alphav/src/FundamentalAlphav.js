@@ -3,6 +3,7 @@ import { samplesToTable }                       from '@analys/convert'
 import { MUTABLE }                              from '@analys/enum-mutabilities'
 import { TABLE }                                from '@analys/enum-tabular-types'
 import { DictCollection }                       from '@glossa/abbr-fin'
+import { LITE }                                 from '@glossa/enum-data-scopes'
 import { BALANCES, CASHFLOWS, INCOMES, SYMBOL } from '@glossa/enum-fin'
 import { BASE }                                 from '@morpont/exchange-alphav/src/assets/base'
 import { decoVector, logger }                   from '@spare/logger'
@@ -24,7 +25,7 @@ export class FundamentalAlphav {
                             end = TODAY,
                             report = BALANCES,
                             format = TABLE,
-                            scope = false,
+                            scope = LITE,
                           } = {}) {
     return await Acq.tabular({
         title: 'annualReports',
