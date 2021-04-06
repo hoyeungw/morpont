@@ -23,6 +23,7 @@
     "@analys/table-timeseries-rolling": "^0.5.0",
     "@glossa/abbr-exchange": "^0.2.8",
     "@glossa/abbr-fin": "^0.2.8",
+    "@glossa/enum-data-scopes": "^0.2.8",
     "@glossa/enum-fin": "^0.2.8",
     "@spare/phrasing": "^0.11.11",
     "@spare/translator": "^0.11.11",
@@ -36,6 +37,7 @@
   "devDependencies": {
     "@flua/utils": "^0.3.0",
     "@flua/vinylize": "^0.3.0",
+    "@ject/rename": "^0.0.6",
     "@spare/enum-chars": "^0.11.11",
     "@spare/verse": "^0.11.11"
   },

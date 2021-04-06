@@ -1,8 +1,9 @@
-import gulp                  from 'gulp'
-import { saveCountryList }   from './gulpfile.countryList.save'
-import { saveIndicatorList } from './gulpfile.indicatorList.save'
+import { BALANCES, CASHFLOWS, INCOMES } from '@glossa/enum-fin'
+import gulp            from 'gulp'
+import { Abbreviator } from './Abbreviator'
 
-export const saveWorldbankCliResources = gulp.series(
-  saveIndicatorList,
-  saveCountryList
+export const saveFundamentalAbbreviations = gulp.series(
+  Abbreviator(BALANCES),
+  Abbreviator(INCOMES),
+  Abbreviator(CASHFLOWS),
 )

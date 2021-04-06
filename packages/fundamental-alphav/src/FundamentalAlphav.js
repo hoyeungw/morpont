@@ -23,7 +23,8 @@ export class FundamentalAlphav {
                             start = shiftMonth(TODAY, -12),
                             end = TODAY,
                             report = BALANCES,
-                            format = TABLE
+                            format = TABLE,
+                            scope = false,
                           } = {}) {
     return await Acq.tabular({
         title: 'annualReports',
@@ -35,8 +36,7 @@ export class FundamentalAlphav {
         },
         prep: ({ quarterlyReports }, { symbol, start, end }) => {
           const table = quarterlyReports |> samplesToTable
-          table.head.map(x => camelToSnake(x, ' ')) |> decoVector |> logger
-          const translator = Translator.build(merges(AbbrAlphav['grammatic'], AbbrAlphav[report], DictCollection[report]))
+
           table
             .mapHead(x => translator.parse(camelToSnake(x, ' '), snakeToCamel), MUTABLE)
             .find({ date: date => within(date, start, end) })
