@@ -2,7 +2,7 @@ import { makeReplaceable } from '@spare/translator'
 import { MUTABLE }         from '@analys/enum-mutabilities'
 import { Table }           from '@analys/table'
 import { exchanges }       from '@glossa/abbr-exchange'
-import { SYMBOL }          from '@glossa/enum-fin'
+import { DATE, SYMBOL }    from '@glossa/enum-fin'
 import { within }          from '@valjoux/dashed-date'
 import { iso }             from '@vect/vector-init'
 import { NaiveCsv }        from 'naivecsv'
@@ -24,6 +24,7 @@ export const csvToTable = (
   const table = csv |> NaiveCsv.toTable |> Table.from
   table
     .mapHead(x => x.replace(dict), MUTABLE)
+    // .mutate(x => Math.round(x), { exclusive: [ SYMBOL, DATE ] })
     .find({ date: date => within(date, start, end) })
     .unshiftColumn(SYMBOL, iso(table.ht, symbol))
   table.title = title

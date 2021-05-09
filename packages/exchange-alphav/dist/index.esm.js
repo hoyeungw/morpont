@@ -48,7 +48,8 @@ const csvToTable = (csv, {
   var _ref, _csv;
 
   const table = (_ref = (_csv = csv, NaiveCsv.toTable(_csv)), Table.from(_ref));
-  table.mapHead(x => x.replace(dict), MUTABLE).find({
+  table.mapHead(x => x.replace(dict), MUTABLE) // .mutate(x => Math.round(x), { exclusive: [ SYMBOL, DATE ] })
+  .find({
     date: date => within(date, start, end)
   }).unshiftColumn(SYMBOL, iso(table.ht, symbol));
   table.title = title;

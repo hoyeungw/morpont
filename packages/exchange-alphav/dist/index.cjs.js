@@ -52,7 +52,8 @@ const csvToTable = (csv, {
   var _ref, _csv;
 
   const table$1 = (_ref = (_csv = csv, naivecsv.NaiveCsv.toTable(_csv)), table.Table.from(_ref));
-  table$1.mapHead(x => x.replace(dict), enumMutabilities.MUTABLE).find({
+  table$1.mapHead(x => x.replace(dict), enumMutabilities.MUTABLE) // .mutate(x => Math.round(x), { exclusive: [ SYMBOL, DATE ] })
+  .find({
     date: date => dashedDate.within(date, start, end)
   }).unshiftColumn(enumFin.SYMBOL, vectorInit.iso(table$1.ht, symbol));
   table$1.title = title;
