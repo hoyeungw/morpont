@@ -18,4 +18,4 @@ export class ExchangeTest {
   }
 }
 
-ExchangeTest.testTimeseries()
+ExchangeTest.testTimeseries().then()

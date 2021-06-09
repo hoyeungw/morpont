@@ -15,6 +15,11 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
+    "@acq/acq": "^0.2.17",
+    "@analys/enum-tabular-types": "^0.5.0",
+    "@analys/samples-filter": "^0.5.0",
+    "@valjoux/convert": "^0.2.11",
+    "@valjoux/date-shift": "^0.2.11",
     "financialmodelingprep": "^1.1.0"
   },
   "devDependencies": {

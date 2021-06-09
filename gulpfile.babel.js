@@ -1,5 +1,5 @@
-import { saveFundamentalAbbreviations } from '@morpont/fundamental-alphav/gulp'
 import gulp                             from 'gulp'
+import { saveFundamentalAbbreviations } from '@morpont/fundamental-alphav/gulp'
 
 
 export {
