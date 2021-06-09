@@ -15,10 +15,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@pres/terminal-interface": "^0.1.7"
+    "@pres/terminal-interface": "^0.3.7"
   },
   "devDependencies": {
-    "@spare/logger": "^0.11.14",
+    "@spare/logger": "^0.11.17",
     "@typen/num-strict": "^0.1.16"
   },
   "repository": {

@@ -1,7 +1,7 @@
 {
-  "name": "@morpont/exchange-alphav",
+  "name": "@morpont/api-fmp",
   "version": "0.0.2",
-  "description": "A exchange-alphav",
+  "description": "A api-fmp",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -15,18 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@acq/acq": "^0.2.17",
-    "@analys/enum-mutabilities": "^0.5.0",
-    "@analys/enum-tabular-types": "^0.5.0",
-    "@analys/table": "^0.5.0",
-    "@glossa/abbr-exchange": "^0.2.8",
-    "@glossa/enum-fin": "^0.2.8",
-    "@spare/translator": "^0.11.17",
-    "@valjoux/dashed-date": "^0.2.11",
-    "@valjoux/enum-period-types": "^0.2.11",
-    "@valjoux/timestamp": "^0.2.11",
-    "@vect/vector-init": "^0.3.10",
-    "naivecsv": "^0.2.1"
+    "financialmodelingprep": "^1.1.0"
   },
   "devDependencies": {
     "@spare/logger": "^0.11.17",

@@ -26,21 +26,21 @@
     "@glossa/abbr-fin": "^0.2.8",
     "@glossa/enum-data-scopes": "^0.2.8",
     "@glossa/enum-fin": "^0.2.8",
-    "@spare/phrasing": "^0.11.14",
-    "@spare/translator": "^0.11.14",
-    "@valjoux/dashed-date": "^0.2.8",
-    "@valjoux/enum-period-types": "^0.2.8",
-    "@valjoux/timestamp": "^0.2.8",
-    "@vect/vector-init": "^0.3.9",
-    "@vect/vector-merge": "^0.3.9",
+    "@spare/phrasing": "^0.11.17",
+    "@spare/translator": "^0.11.17",
+    "@valjoux/dashed-date": "^0.2.11",
+    "@valjoux/enum-period-types": "^0.2.11",
+    "@valjoux/timestamp": "^0.2.11",
+    "@vect/vector-init": "^0.3.10",
+    "@vect/vector-merge": "^0.3.10",
     "naivecsv": "^0.2.1"
   },
   "devDependencies": {
     "@flua/utils": "^0.3.0",
     "@flua/vinylize": "^0.3.0",
-    "@ject/rename": "^0.0.11",
-    "@spare/enum-chars": "^0.11.14",
-    "@spare/verse": "^0.11.14"
+    "@ject/rename": "^0.0.12",
+    "@spare/enum-chars": "^0.11.17",
+    "@spare/verse": "^0.11.17"
   },
   "repository": {
     "type": "git",
