@@ -5,7 +5,7 @@ import { shiftDay }          from '@valjoux/date-shift'
 import APIKEY                from '../../../local/fmp.apikey.json'
 
 const TODAY = new Date() |> dateToYmd
-const BEFORE = shiftDay(TODAY.slice(), -30)
+const BEFORE = shiftDay(TODAY.slice(), -60)
 
 MarketIndexes.login(APIKEY)
 

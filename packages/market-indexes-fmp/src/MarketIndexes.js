@@ -27,13 +27,9 @@ export class MarketIndexes {
       title: indicator,
       url: `${ BASE_FMP }/historical-price-full/${ MARKET_INDEXES[indicator] }`,
       params: { apikey: MarketIndexes.apikey },
-      prep: (some) => {
-        console.log(some)
-        const historical = some.historical
-        return samplesFilter.call(
-          historical, { field: 'date', filter: d => within(d |> dashToYmd, start, end) }
-        )
-      },
+      prep: ({ historical }) => samplesFilter.call(
+        historical, { field: 'date', filter: d => within(d |> dashToYmd, start, end) }
+      ),
       fields: easy ? FIELDS_LITE : FIELDS_FULL,
       from: SAMPLES,
       to: format,
