@@ -1,0 +1,15 @@
+export const FIELDS_FULL = [
+  [ 'date', 'date', ],
+  [ 'open', 'o', ],
+  [ 'high', 'h', ],
+  [ 'low', 'l', ],
+  [ 'close', 'c', ],
+  [ 'adjClose', 'adj.c', ],
+  [ 'volume', 'vol', ],
+  [ 'unadjustedVolume', 'unadj.vol', ],
+  [ 'change', 'ch', ],
+  [ 'changePercent', 'ch.pc', ],
+  [ 'vwap', 'vwap', ],
+  [ 'label', 'label', ],
+  [ 'changeOverTime', 'ch.ot', ],
+]

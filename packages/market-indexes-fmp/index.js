@@ -1,2 +1,2 @@
-export { MARKET_INDEXES } from './assets/MARKET_INDEXES'
-export { MarketIndexes }  from './src/MarketIndexes'
+export { MARKET_INDEXES, MARKET_INDEXES_TABLE } from './assets/index'
+export { MarketIndexes }                        from './src/MarketIndexes'

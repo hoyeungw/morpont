@@ -1,0 +1,1 @@
+export const BASE_FMP = 'https://financialmodelingprep.com/api/v3'

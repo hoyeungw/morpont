@@ -1,29 +1,6 @@
-export const BASE_FMP = 'https://financialmodelingprep.com/api/v3'
-
-export const FIELDS_FULL = [
-  [ 'date', 'date', ],
-  [ 'open', 'o', ],
-  [ 'high', 'h', ],
-  [ 'low', 'l', ],
-  [ 'close', 'c', ],
-  [ 'adjClose', 'adj.c', ],
-  [ 'volume', 'vol', ],
-  [ 'unadjustedVolume', 'unadj.vol', ],
-  [ 'change', 'ch', ],
-  [ 'changePercent', 'ch.pc', ],
-  [ 'vwap', 'vwap', ],
-  [ 'label', 'label', ],
-  [ 'changeOverTime', 'ch.ot', ],
-]
-
-export const FIELDS_LITE = [
-  [ 'date', 'date', ],
-  [ 'open', 'o', ],
-  [ 'high', 'h', ],
-  [ 'low', 'l', ],
-  [ 'close', 'c', ],
-  [ 'volume', 'vol', ],
-  [ 'changePercent', 'ch.pc', ],
-  [ 'change', 'ch', ],
-  [ 'adjClose', 'adj.c', ],
-]
+export { BASE_FMP }                 from './BASE_FMP'
+export { FIELDS_FULL }              from './FIELDS_FULL'
+export { FIELDS_LITE }              from './FIELDS_LITE'
+export { MARKET_INDEXES }           from './MARKET_INDEXES'
+export { MARKET_INDEXES_TABLE }     from './MARKET_INDEXES_TABLE'
+export { MARKET_INDEXES_TABLE_RAW } from './MARKET_INDEXES_TABLE_RAW'
