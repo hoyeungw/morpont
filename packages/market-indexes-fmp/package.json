@@ -1,6 +1,6 @@
 {
   "name": "@morpont/market-indexes-fmp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A market-indexes-fmp",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
