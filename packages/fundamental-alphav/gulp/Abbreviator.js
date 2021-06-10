@@ -13,7 +13,7 @@ import { Translator }                             from '@spare/translator'
 import { Verse }                                  from '@spare/verse'
 import { merges }                                 from '@vect/vector-merge'
 import gulp                                       from 'gulp'
-import APIKEY                                     from '../../../local/apikey.json'
+import APIKEY                                     from '../../../local/alphav.apikey.json'
 import { _reportToAlphavantageFunction }          from '../src/FundamentalAlphav'
 import { LocalDictCollection }                    from './LocalDictCollection'
 
@@ -22,7 +22,7 @@ const DEST = 'packages/fundamental-alphav/resources'
 
 export class FundDev {
   static apikey
-  static login(key) { return (FundDev.apikey = key), FundDev }
+  static login(key) { return ( FundDev.apikey = key ), FundDev }
   static async reports({
                          symbol = 'TSLA',
                          report = BALANCES
@@ -63,7 +63,7 @@ export const Abbreviator = (report) => {
 
       // save
       await Vinylize(report + '.db.js')
-        .p(esvar(report+'Db'))
+        .p(esvar(report + 'Db'))
         .p(Verse.entries(entries,))//{ delim: COLF }
         .pipe(gulp.dest(DEST))
     }
