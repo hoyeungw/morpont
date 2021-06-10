@@ -1,8 +1,8 @@
 import { decoTable, logger } from '@spare/logger'
-import { MarketIndexes }     from '../src/MarketIndexes'
 import { dateToYmd }         from '@valjoux/convert'
 import { shiftDay }          from '@valjoux/date-shift'
 import APIKEY                from '../../../local/fmp.apikey.json'
+import { MarketIndexes }     from '../src/MarketIndexes'
 
 const TODAY = new Date() |> dateToYmd
 const BEFORE = shiftDay(TODAY.slice(), -60)
