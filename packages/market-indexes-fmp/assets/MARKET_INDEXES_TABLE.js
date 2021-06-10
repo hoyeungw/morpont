@@ -1,5 +1,5 @@
 export const MARKET_INDEXES_TABLE ={
-  head: ['label', 'symbol', 'des', 'exchange', 'city', 'region', 'curr'],
+  head: ['id', 'symbol', 'des', 'exchange', 'city', 'region', 'curr'],
   rows: [
     ['sp500'   , '^GSPC'    , 'S&P 500'                     , 'SNP'                    , 'New York' , 'Atlantic', 'USD'],
     ['dowJones', '^DJI'     , 'Dow Jones Industrial Average', 'DJI'                    , 'New York' , 'Atlantic', 'USD'],
@@ -14,7 +14,7 @@ export const MARKET_INDEXES_TABLE ={
     ['nikkei'  , '^N225'    , 'Nikkei 225'                  , 'Osaka'                  , 'Tokyo'    , 'Asia'    , 'JPY'],
     ['seoul'   , '^KS11'    , 'KOSPI Composite Index'       , 'KSE'                    , 'Seoul'    , 'Asia'    , 'KRW'],
     ['taiwan'  , '^TWII'    , 'TSEC weighted index'         , 'Taiwan'                 , 'Taipei'   , 'Asia'    , 'TWD'],
-    ['moscow'  , 'IMOEX.ME' , 'MOEX Russia Index'           , 'MCX'                    , 'Moscow'   , 'C.Euro'  , 'RUB'],
+    // ['moscow'  , 'IMOEX.ME' , 'MOEX Russia Index'           , 'MCX'                    , 'Moscow'   , 'C.Euro'  , 'RUB'],
     ['istanbul', 'XU100.IS' , 'BIST 100'                    , 'Istanbul'               , 'Istanbul' , 'C.Euro'  , 'TRY'],
   ],
 }
