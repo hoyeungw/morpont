@@ -1,8 +1,8 @@
 import { BALANCES, CASHFLOWS, INCOMES } from '@glossa/enum-fin'
-import { DecoTable, logger, says }      from '@spare/logger'
+import { DecoTable, says }              from '@spare/logger'
 import { isNumeric }                    from '@typen/num-strict'
+import APIKEY                           from '../../../local/alphav.apikey.json'
 import { FundamentalAlphav }            from '../src/FundamentalAlphav'
-import APIKEY                           from '../../../local/apikey.json'
 
 export class FundamentalTest {
   static async test() {
